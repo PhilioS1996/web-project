@@ -1,0 +1,72 @@
+
+[
+    {
+        "startedDateTime": "2020-12-06T16:28:13.604Z",
+        "serverIPAddress": "23.227.38.32",
+        "timings": {
+            "wait": 285.6369998766482
+        },
+        "request": {
+            "method": "GET",
+            "url": "https://test.gr",
+            "headers": {
+                "content-type": "text/html; charset=utf-8",
+                "cache-control": "no-cache, no-store, must-revalidate",
+                "pragma": "no-cache",
+                "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+                "age": "1197680",
+                "last-modified": "Fri, 22 Nov 2019 14:24:41 GMT",
+                "host": "simple-tos-production.herokuapp.com"
+            }
+        }, 
+        "response": {
+            "status": "200",
+            "statusText": "OK",
+            "headers": {
+                "content-type": "text/html; charset=utf-8",
+                "cache-control": "no-cache, no-store, must-revalidate",
+                "pragma": "no-cache",
+                "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+                "age": "1197680",
+                "last-modified": "Fri, 22 Nov 2019 14:24:41 GMT",
+                "host": "simple-tos-production.herokuapp.com"
+            }
+        }
+    },
+    {
+        "startedDateTime": "1900-12-06T16:28:13.604Z",
+        "serverIPAddress": "20.227.38.32",
+        "timings": {
+            "wait": 285.6369998766482
+        },
+        "request": {
+            "method": "GET",
+            "url": "https://test.gr",
+            "headers": {
+                "content-type": "text/html; charset=utf-8",
+                "cache-control": "no-cache, no-store, must-revalidate",
+                "pragma": "no-cache",
+                "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+                "age": "1197680",
+                "last-modified": "Fri, 22 Nov 2019 14:24:41 GMT",
+                "host": "simple-tos-production.herokuapp.com"
+            }
+        }, 
+        "response": {
+            "status": "200",
+            "statusText": "OK",
+            "headers": {
+                "content-type": "text/html; charset=utf-8",
+                "cache-control": "no-cache, no-store, must-revalidate",
+                "pragma": "no-cache",
+                "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+                "age": "1197680",
+                "last-modified": "Fri, 22 Nov 2019 14:24:41 GMT",
+                "host": "simple-tos-production.herokuapp.com"
+            }
+        }
+    }
+]
+
+
+        
