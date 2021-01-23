@@ -2,7 +2,7 @@ $(document).ready(function()
 {
     $("#usr_submit").click(function()
     {
-        
+    
         var username = document.getElementById('username').value;
         var newusername = document.getElementById('newusername').value;
         if (username == "" || newusername == "" )

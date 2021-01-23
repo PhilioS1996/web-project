@@ -27,7 +27,6 @@ $(document).ready(function()
         
         reader.onload=function()
         {
-
             //har_entries is object
             const har_entries = JSON.parse(reader.result);
             

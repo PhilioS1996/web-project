@@ -1,5 +1,5 @@
 <?php 
- 
+
   include "../config.php";
 
   if  ( (isset($_POST['username']) && isset($_POST['newusername'])) ) 
