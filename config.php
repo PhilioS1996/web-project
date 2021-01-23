@@ -7,4 +7,3 @@
 		die("ERROR: Could not connect with database. " . mysqli_connect_error());
     }
 ?>
-	

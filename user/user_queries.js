@@ -25,6 +25,7 @@ $(document).ready(function()
 
         const reader = new FileReader();
         
+        
         reader.onload=function()
         {
             //har_entries is object

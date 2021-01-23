@@ -26,6 +26,7 @@
 			}
 			else echo 0;
 		}
+		
 		//Admin login
 		if (mysqli_num_rows($admin_result) == 1)
 		{

@@ -16,6 +16,7 @@
     }
     
     
+    
     if (isset($_GET['data']) && ($_GET['data']) == "last_updated")
     {
       //Bring the timestamp from last update 
