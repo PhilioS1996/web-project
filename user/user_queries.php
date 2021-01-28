@@ -51,6 +51,8 @@
     //UPLOAD DATA ( TABLES UPLOADS + HAR ENTRIES)
     if ( isset($_POST['har_data']) && isset($_POST['users_data']) )
     {
+      //har_data ----> TABLE HAR ENTRIES
+      //users_data----> TABLE UPLOAD
        
       //TABLE: UPLOADS
       $users_array = $_POST['users_data'];

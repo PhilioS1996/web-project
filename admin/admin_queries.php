@@ -27,15 +27,15 @@ if (isset($_SESSION['username']))
 
         if ($result2)
         {
-            echo "<table border='1' >
+            echo "<table style=' border: 1px solid black'>
             <tr>
-            <td align=center><b>Method</b></td>
-            <td align=center><b>Count</b></td>";
+            <td align=center>Method</td>
+            <td align=center>Count</td>";
 
             while($data2 = mysqli_fetch_row($result2))
             {   
                 echo "<tr>";
-                echo "<td align=left>$data2[0]</td>";
+                echo "<td align=center>$data2[0]</td>";
                 echo "<td align=center>$data2[1]</td>";
                 echo "</tr>";
             }
@@ -50,10 +50,10 @@ if (isset($_SESSION['username']))
 
         if ($result3)
         {
-            echo "<table border='1' >
+            echo "<table style=' border: 1px solid black' >
             <tr>
-            <td align=center><b>Status</b></td>
-            <td align=center><b>Count</b></td>";
+            <td align=center>Status</td>
+            <td align=center>Count</td>";
 
             while($data3 = mysqli_fetch_row($result3))
             {   
@@ -102,10 +102,10 @@ if (isset($_SESSION['username']))
 
         if ($result6)
         {
-            echo "<table border='1' >
+            echo "<table  style=' border: 1px solid black' >
             <tr>
-            <td align=center><b>Content type</b></td>
-            <td align=center><b>Average age</b></td>";
+            <td align=center>Content type</td>
+            <td align=center>Average age</td>";
 
             while($data6 = mysqli_fetch_row($result6))
             {   

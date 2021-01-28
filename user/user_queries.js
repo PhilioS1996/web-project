@@ -15,7 +15,7 @@ $(document).ready(function()
                
         
 
-        var allowed_type = /(\.har)$/i; 
+        var allowed_type = /(\.har)$/i; //regex 
 
         if (!allowed_type.exec(filepath))
         {
@@ -35,8 +35,9 @@ $(document).ready(function()
                 res_content = res_cache = res_pragma = res_expires = res_age = res_last = res_host = 0 ;
 
             var entries = har_entries.log.entries;
+            console.log(har_entries);
             //ENTRIES i LOOP 
-            for (var i = 0; i< entries.length; i++)
+            for (var i = 0; i< entries.length; i++) //lengthh = 32
             { 
                 // REQUEST HEADERS
                 var req_headers = entries[i].request.headers;
@@ -48,7 +49,7 @@ $(document).ready(function()
                     }
                     if (req_headers[j].name == "cache-control")
                     {
-                    req_cache = req_headers[j].value;
+                        req_cache = req_headers[j].value;
                     }
                     if (req_headers[j].name == "pragma")
                     {
@@ -130,7 +131,7 @@ $(document).ready(function()
                 
                 myjson.push(  
                     {
-                        serverIPAdress: entries[i].serverIPAddress,
+                        serverIPAddress: entries[i].serverIPAddress,
                         serversLatitude: geo_coord.latitude,
                         serversLongitude: geo_coord.longitude,
                         startedDateTime: entries[i].startedDateTime, 
@@ -211,7 +212,7 @@ $(document).ready(function()
     });
 });
 
-//FUNCTION: upload
+//FUNCTION: upload to server
 $(document).ready(function()
 {
     $("#upload").click(function()
@@ -244,7 +245,7 @@ $(document).ready(function()
 //LAST UPLOAD
 $(document).ready(function() 
 {
-    $("#last_button").click(function() 
+    $("#btn1").click(function() 
     {
         $.ajax({
             type: "GET",
@@ -252,7 +253,7 @@ $(document).ready(function()
             data: { data: "last_updated"},
             success:function(response)
             {
-                $("#show_lastupdated").html(response);
+                $("#display1").html(response);
             }
         }); 
     });
@@ -261,7 +262,7 @@ $(document).ready(function()
 //TOTAL UPLOADS
 $(document).ready(function() 
 {
-    $("#total_button").click(function() 
+    $("#btn2").click(function() 
     {
         $.ajax({
             type: "GET",
@@ -269,7 +270,7 @@ $(document).ready(function()
             data: { data: "total_uploads"},
             success:function(response)
             {
-                $("#show_total").html(response);
+                $("#display2").html(response);
             }
         }); 
     });
