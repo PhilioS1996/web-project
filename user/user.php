@@ -29,15 +29,26 @@
     <script src="user_queries.js"></script>
     <script src="change_cred.js"></script>
     <title>User Menu</title>
+    <style>
+    .nameVariable{
+      padding: 8px;
+      color: rgb(17, 65, 61);
+    } 
+    .firstBox{
+      padding: 20px;
+      border: 15px solid green;
+    }
+    </style>
   </head>
 
   <body>
     <div>
 
-      <h1>Welcome <?php echo $username ?> !</h1> </div>
+      <h1 align="left">Welcome <span class="nameVariable"> <?php echo $username ?> </span></h1> </div>
       
       <div>
-        <h2>Upload data</h2>
+        <div class="firstBox">
+        <h2 >Upload data</h2>
         <h3>Please select a .har file:</h3>
         <input type="file" id="myfiles" multiple/>
         <button id = "upload-btn">Upload</button><br><br>
@@ -47,6 +58,7 @@
         <button id="download">Download</button> 
         <button id="upload" >Upload to server</button><br><br>
         <div id="server"></div>
+        </div>
 
         <h3>Your last HAR upload was on: </h3> <div id="display1"></div>
         <button id="btn1">Display</button><br><br>

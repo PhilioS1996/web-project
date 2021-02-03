@@ -2,37 +2,60 @@ body
 {
     margin: 0px;
     padding: 0px;
-    background: url("background.jpg") no-repeat;
+    background-color: aliceblue; 
+    /* opacity: 0.6; */
     background-size: cover;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px; 
+    font-family: 'Abel', sans-serif;
+    font-size: 22px; 
 }
+
+button
+{
+    background-color: #c9c9c9; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    /* cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;  */
+}
+.button:hover {background-color: #e7e7e7;}
+
 
 #welcome
 {
     text-align: center;
 }
 
-button
-{
-   
-    cursor: pointer;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px; 
-}
-
 #leftdiv
 {
+    
     height: 100px;
     width: 48%;
     float: left;
+    text-align:center;
+    margin-top: 25px; 
+    padding-top: 400px; 
+    
 }
 
 #rightdiv
 {
+    
     height: 100px;
     width: 48%;
     float: right;
+    text-align:center;
+    margin-top: 25px;
+    padding-top: 400px; 
 }
 
 #outerdiv
@@ -42,3 +65,4 @@ button
     margin: 0px auto;
     padding: 5px;
 }
+

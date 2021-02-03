@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script src="user_connect.js"></script>
-    <title>Welcome</title>
-  </head>
 
-  <body>
-  
-    <div id = "outerdiv"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="user_connect.js"></script>
+  <title>Welcome</title>
+  <style>
+    svg {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
-      <h1 align="center"> Welcome!</h1> 
+    .container {
+      display: inline-block;
 
-      <div id="leftdiv">
-        <h2>Log in</h2>
-        <input type="text" placeholder="Username" id="username"><br>
-        <input type="password" placeholder="Password" id="password"><br>
-        <div id="log-message"></div>
-        
-        <button type="submit" id="log-btn">Log in</button>
-      </div>
+      width: 100%;
+      padding-bottom: 150%;
+      vertical-align: middle;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+    }
 
-      <div id="rightdiv">
-        <h2>Sign up</h2>
-        <input type="text" placeholder="Username" id = "username1"><br>
-        <input type="text" placeholder="Email" id = "email"><br>
-        <input type="password" placeholder="Password" id = "password1"><br>        
-        <input type="password" placeholder="Confirm Password" id = "cpassword"><br>
-        <div id="reg-message"></div>
-        
-        <button type="submit" id="reg-btn">Sign up</button>
-      </div>
-    </div>
+    input[type=text] {
+      width: 25%;
+      padding: 14px 2px;
+      margin: 8px 0;
+      border-radius: 4px;
+
+    }
+
+    input[type=password] {
+      width: 25%;
+      padding: 14px 2px;
+      margin: 8px 0;
+      border-radius: 4px;
+      /* color:rgb(17, 65, 61); */
+    }
+
     
-  </body>
+  </style>
+</head>
+
+<body style="text-align:center;">
+
+  <h1 align="center " style="color:rgb(11, 34, 32);"> Welcome</h1>
+
+  <div class="container">
+
+    <!-- Creating a SVG image -->
+    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+
+      <path d="M0, 100 C150, 400 300, 
+            -150 500, 100 L500, 00 L0, 0 Z" style="stroke:none; fill:#5c7c7c;">
+      </path>
+    </svg>
+
+    <div class="Espace"></div>
+
+
+    <div id="leftdiv">
+      <h2 style="color:rgb(15, 26, 22);">Log in</h2>
+      <input type="text" placeholder="Username" id="username"><br>
+      <input type="password" placeholder="Password" id="password"><br>
+      <div id="log-message" style="color: rgb(155, 1, 1); font-size: medium;"></div>
+
+      <button type="submit" id="log-btn">Log in</button>
+    </div>
+
+
+    <div id="rightdiv">
+      <h2 style="color:rgb(18, 32, 27);">Sign up</h2>
+      <input type="text" placeholder="Username" id="username1"><br>
+      <input type="text" placeholder="Email" id="email"><br>
+      <input type="password" placeholder="Password" id="password1"><br>
+      <input type="password" placeholder="Confirm Password" id="cpassword"><br>
+      <div id="reg-message" style="color: rgb(238, 53, 53); font-size: medium;"></div>
+
+      <button type="submit" id="reg-btn">Sign up</button>
+    </div>
+
+  </div>
+
+</body>
+
 </html>
